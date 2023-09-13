@@ -9,7 +9,6 @@
 5. [Folder Structure](#folder-structure)
 6. [Technologies Used](#technologies-used)
 7. [Contributing](#contributing)
-8. [License](#license)
 
 ## Introduction
 
