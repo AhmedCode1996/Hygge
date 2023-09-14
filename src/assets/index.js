@@ -9,7 +9,16 @@ import secondary_4 from "./Secondary-4.png";
 import searchIcon from "./Search.png";
 import cartIcon from "./Icon-indicator.png";
 import userProfile from "./Profile.png";
-import HeroImage from './HeroImage.svg'
+import HeroImage from "./HeroImage.svg";
+
+import onSale from "./categories/Shopping-bag.png";
+import skinCare from "./categories/Skincare.png";
+import afterSun from "./categories/After-sun.png";
+import eyeCare from "./categories/Eye-care.png";
+import natural from "./categories/Natural.png";
+import nightCart from "./categories/Night-care.png";
+import protection from "./categories/Protection.png";
+import trending from "./categories/Trending.png";
 export const ICONS = {
   primary_1,
   primary_2,
@@ -22,5 +31,19 @@ export const ICONS = {
   userProfile,
   cartIcon,
   searchIcon,
-  HeroImage
+  HeroImage,
+  category1: onSale,
+  category2: skinCare,
+  category3: afterSun,
+  category4: eyeCare,
+  category5: natural,
+  category6: nightCart,
+  category7: protection,
+  category8: trending,
+  category9: skinCare,
+  category10: afterSun,
+  category11: eyeCare,
+  category12: natural,
+  category13: nightCart,
+  category14: protection
 };
