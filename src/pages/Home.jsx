@@ -1,5 +1,5 @@
 import { styled } from "styled-components";
-import { Header, HeroSection } from "../components";
+import { Header, HeroSection, Products } from "../components";
 const Home = () => {
   return (
     <Wrapper>
@@ -7,6 +7,7 @@ const Home = () => {
         <Header />
         <HeroSection />
       </HeaderAndHero>
+      <Products />
     </Wrapper>
   );
 };
