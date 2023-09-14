@@ -9,6 +9,7 @@ import secondary_4 from "./Secondary-4.png";
 import searchIcon from "./Search.png";
 import cartIcon from "./Icon-indicator.png";
 import userProfile from "./Profile.png";
+import HeroImage from './HeroImage.svg'
 export const ICONS = {
   primary_1,
   primary_2,
@@ -21,4 +22,5 @@ export const ICONS = {
   userProfile,
   cartIcon,
   searchIcon,
+  HeroImage
 };

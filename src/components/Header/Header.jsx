@@ -34,7 +34,9 @@ const Header = () => {
 
 export default Header;
 
-const Wrapper = styled.header``;
+const Wrapper = styled.header`
+  padding-block: 2rem;
+`;
 const HeaderNav = styled.nav``;
 const NavItems = styled.ul`
   display: flex;

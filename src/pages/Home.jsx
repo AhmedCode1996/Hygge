@@ -1,9 +1,12 @@
 import { styled } from "styled-components";
-import { Header } from "../components";
+import { Header, HeroSection } from "../components";
 const Home = () => {
   return (
     <Wrapper>
-      <Header />
+      <HeaderAndHero>
+        <Header />
+        <HeroSection />
+      </HeaderAndHero>
     </Wrapper>
   );
 };
@@ -11,6 +14,12 @@ const Home = () => {
 export default Home;
 
 const Wrapper = styled.div`
-  padding-block: ${16 / 16}rem;
   padding-inline: ${24 / 16}rem;
+
+  & > * + * {
+    margin-top: 1rem;
+  }
+`;
+const HeaderAndHero = styled.div`
+  height: 100dvh;
 `;

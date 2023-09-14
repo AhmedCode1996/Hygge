@@ -44,6 +44,8 @@ export const GlobalStyle = createGlobalStyle`
     --global-inline-padding: 96px;
     --global-block-padding: 48px;
 
+    --border-radius: 64px;
+
 }
 html {
     font-family: 'Montserrat', sans-serif;
