@@ -7,4 +7,8 @@ export const DATA = [
     title: "the categories",
     description: "browse by category",
   },
+  {
+    title: "our products",
+    description: "explore our products",
+  },
 ];
