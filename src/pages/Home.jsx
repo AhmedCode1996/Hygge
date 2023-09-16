@@ -6,16 +6,25 @@ import { DATA } from "../data/data";
 import { getCategories, getProducts } from "../services/apiCall";
 
 import {
+  Button,
   Categories,
   Category,
   Header,
   HeroSection,
+  Information,
   Product,
   Products,
 } from "../components";
 import HeadingSection from "../components/HeadingSection/HeadingSection";
 import { ICONS } from "../assets";
 
+// const a = {
+//   i: 1,
+//   toString: () => a.i++,
+// };
+// if (a == 1 && a == 2 && a == 3) {
+//   console.log("you achieved this trick👌");
+// }
 const Home = () => {
   const combinedQuery = useQuery({
     queryKey: ["categories", "products"],
@@ -69,7 +78,16 @@ const Home = () => {
             />
           )}
         />
+        <Button align="center">show more</Button>
       </ProductsSection>
+      <InformationSection>
+        <HeadingSection
+          title={`- ${DATA[3].title}`}
+          description={DATA[3].description}
+          align="center"
+        />
+        <Information />
+      </InformationSection>
     </Wrapper>
   );
 };
@@ -94,6 +112,11 @@ const CategoriesSection = styled.div`
 `;
 
 const ProductsSection = styled.div`
+  & > * + * {
+    margin-top: 40px;
+  }
+`;
+const InformationSection = styled.div`
   & > * + * {
     margin-top: 40px;
   }

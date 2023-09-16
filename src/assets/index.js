@@ -29,6 +29,10 @@ import product5 from "./products/Product-5.svg";
 import product6 from "./products/Product-6.svg";
 import product7 from "./products/Product-7.svg";
 
+import returnIcon from "./information/Returns.png";
+import profileIcon from "./information/Profile.png";
+import qualityIcon from "./information/Quality.png";
+
 export const ICONS = {
   primary_1,
   primary_2,
@@ -64,4 +68,7 @@ export const ICONS = {
   product5,
   product6,
   product7,
+  returnIcon,
+  profileIcon,
+  qualityIcon,
 };

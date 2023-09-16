@@ -6,6 +6,8 @@ import Category from "./Category";
 import Categories from "./Categories";
 import Product from "./Product";
 import Products from "./Products";
+import Information from "./Information";
+import SingleInformation from "./SingleInformation";
 export {
   Header,
   MaxWrapper,
@@ -15,4 +17,6 @@ export {
   Categories,
   Product,
   Products,
+  Information,
+  SingleInformation,
 };
