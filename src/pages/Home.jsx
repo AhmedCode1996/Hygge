@@ -14,6 +14,7 @@ import {
   Products,
 } from "../components";
 import HeadingSection from "../components/HeadingSection/HeadingSection";
+import { ICONS } from "../assets";
 
 const Home = () => {
   const combinedQuery = useQuery({
@@ -30,13 +31,7 @@ const Home = () => {
     },
   });
 
-  const {
-    isLoading,
-    error,
-    isError,
-    status,
-    data,
-  } = combinedQuery;
+  const { isLoading, error, isError, status, data } = combinedQuery;
 
   return (
     <Wrapper>
@@ -66,7 +61,12 @@ const Home = () => {
           loading={isLoading}
           data={data?.products}
           renderProduct={(product, index) => (
-            <Product key={index} {...product} id={index} />
+            <Product
+              key={index}
+              {...product}
+              image_link={ICONS[`product${index}`]}
+              id={index}
+            />
           )}
         />
       </ProductsSection>
@@ -81,11 +81,11 @@ const Wrapper = styled.div`
   overflow: hidden;
 
   & > * + * {
-    margin-top: 1rem;
+    margin-top: 3rem;
   }
 `;
 const HeaderAndHero = styled.div`
-  height: 100dvh;
+  /* height: 100dvh; */
 `;
 const CategoriesSection = styled.div`
   & > * + * {

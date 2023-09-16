@@ -7,12 +7,25 @@ import { TYPOGRAPHY } from "../../constants";
 
 const Product = (props) => {
   const { id, name, price, image_link: image, category } = props;
-
+  const categoryColors = {
+    "--bgColor": "",
+    "--color": "",
+  };
+  if (category === "pencil") {
+    categoryColors["--bgColor"] = "#FFF9EA";
+    categoryColors["--color"] = "#FFC123";
+  } else if (category === "lipstick") {
+    categoryColors["--bgColor"] = "#EAF2FF";
+    categoryColors["--color"] = "#2975FF";
+  } else if (category === "liquid") {
+    categoryColors["--bgColor"] = "#E6faf5";
+    categoryColors["--color"] = "#00CC96";
+  }
   return (
-    <Wrapper>
+    <Wrapper style={categoryColors}>
       <ProductBody>
         <img src={image} alt={name} />
-        <span>20%</span>
+        <span>20%off</span>
         <Link className="product-link" to="/">
           Add To Cart
         </Link>
@@ -31,12 +44,28 @@ const Product = (props) => {
 
 export default Product;
 
-const Wrapper = styled.article``;
+const Wrapper = styled.article`
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 16px;
+
+  &:hover .product-link {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(80px);
+    transition: all 0.3s;
+  }
+`;
 const ProductBody = styled.div`
+  display: flex;
+  justify-content: center;
   background-color: var(--accent-gray-color);
-  border-radius: 24px;
-  padding: 1rem;
+  border-radius: 32px;
+  padding: 1.5rem 1rem;
   position: relative;
+  height: 100%;
 
   img {
     border-radius: inherit;
@@ -44,12 +73,28 @@ const ProductBody = styled.div`
 
   span {
     position: absolute;
-    top: 10%;
-    right: 10%;
+    right: 0;
+    transform: translate(25%, 20%);
+    background-color: var(--accent-red-color);
+    color: var(--white-color);
+    font-weight: 550;
+    text-transform: uppercase;
+    border-radius: 100px;
+    padding: 0.5rem 1rem;
   }
 
   a {
-    display: none;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    background-color: var(--primary-green-color);
+    color: var(--white-color);
+    font-weight: 600;
+    border-radius: 100px;
+    padding: 8px 14px;
+    transform: translateY(0);
+    transition: all 1s;
+    margin-block: auto;
   }
 `;
 const ProductTitle = styled.h2`
@@ -65,11 +110,13 @@ const ProductInformation = styled.div`
   justify-content: space-around;
 `;
 const ProductCategory = styled.p`
-  border-radius: 24px;
-  padding: 8px 16px;
+  background-color: var(--bgColor);
+  color: var(--color);
   width: fit-content;
+  padding: 8px 16px;
+  border-radius: 24px;
   font-size: ${TYPOGRAPHY.sm};
-  font-weight: bold;
+  font-weight: 600;
 `;
 const ProductPrice = styled.div`
   font-weight: 600;

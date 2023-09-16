@@ -17,5 +17,6 @@ const Wrapper = styled.div`
     auto-fit,
     minmax(min(${128 / 16}rem, 100%), 3rem)
   );
+  justify-content: center;
   gap: 16px;
 `;

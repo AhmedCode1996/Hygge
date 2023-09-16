@@ -1,7 +1,7 @@
 import { styled } from "styled-components";
 import MaxWrapper from "../MaxWrapper";
 import HeadingSection from "./../HeadingSection/HeadingSection";
-import {Button} from './../../components'
+import { Button } from "./../../components";
 import { ICONS } from "../../assets";
 import { DATA } from "../../data/data";
 
@@ -30,7 +30,6 @@ const Wrapper = styled.div`
   place-content: center;
   background-color: var(--accent-gray-color);
   border-radius: var(--border-radius);
-  height: calc(100% - 10rem);
 `;
 
 const Content = styled.div`

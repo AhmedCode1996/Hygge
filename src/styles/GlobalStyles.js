@@ -20,7 +20,7 @@ export const GlobalStyle = createGlobalStyle`
     --primary-green-color: #00CC96;
     --primary-light-green-color: #E6faf5;
     --seconday-blue-color: #2975FF;
-    --secondary-light-green-color: #EAF2FF;
+    --secondary-light-blue-color: #EAF2FF;
     --tertiary-yellow-color: #FFC123;
     --tertiary-light-yellow-color: #FFF9EA;
     --tertiary-pink-color: #FF66A0;

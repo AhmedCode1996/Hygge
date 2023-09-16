@@ -19,6 +19,16 @@ import natural from "./categories/Natural.png";
 import nightCart from "./categories/Night-care.png";
 import protection from "./categories/Protection.png";
 import trending from "./categories/Trending.png";
+
+import product0 from "./products/Product-0.svg";
+import product1 from "./products/Product-1.svg";
+import product2 from "./products/Product-2.svg";
+import product3 from "./products/Product-3.svg";
+import product4 from "./products/Product-4.svg";
+import product5 from "./products/Product-5.svg";
+import product6 from "./products/Product-6.svg";
+import product7 from "./products/Product-7.svg";
+
 export const ICONS = {
   primary_1,
   primary_2,
@@ -45,5 +55,13 @@ export const ICONS = {
   category11: eyeCare,
   category12: natural,
   category13: nightCart,
-  category14: protection
+  category14: protection,
+  product0,
+  product1,
+  product2,
+  product3,
+  product4,
+  product5,
+  product6,
+  product7,
 };
