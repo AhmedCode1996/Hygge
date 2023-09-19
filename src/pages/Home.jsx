@@ -15,8 +15,10 @@ import {
   Product,
   Products,
   ReviewSection,
+  HeadingSection,
+  NewsLetterSection,
+  FooterSection,
 } from "../components";
-import HeadingSection from "../components/HeadingSection/HeadingSection";
 import { ICONS } from "../assets";
 
 // const a = {
@@ -92,6 +94,8 @@ const Home = () => {
         <Information />
       </InformationSection>
       <ReviewSection />
+      <NewsLetterSection />
+      <FooterSection />
     </Wrapper>
   );
 };

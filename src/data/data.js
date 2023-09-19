@@ -21,6 +21,10 @@ export const DATA = [
     title: "our reviews",
     description: "what our customers are saying",
   },
+  {
+    title: "our newsletter",
+    description: "signup to our newsletter",
+  },
 ];
 
 export const INFORMATION = [
@@ -67,5 +71,44 @@ export const REVIEWS = [
     name: "Delia Estrada",
     description:
       "courage father kept apartment must full halfway or forgot gift follow leaf settle card anyone faster citizen else separate bank something strong friendly down",
+  },
+];
+
+export const FOOTER = [
+  {
+    id: 1,
+    title: "categories",
+    items: [
+      "pencil",
+      "lipstick",
+      "liquid",
+      "powder",
+      "lip_gloss",
+      "gel",
+      "cream",
+      "palette",
+      "concealer",
+      "highlighter",
+      "bb_cc",
+      "contour",
+      "lip_stain",
+      "mineral",
+    ],
+  },
+  {
+    id: 2,
+    title: "legal",
+    items: [
+      "terms of service",
+      "privacy policy",
+      "return policy",
+      "shipping",
+      "data protection",
+    ],
+  },
+  {
+    id: 3,
+    title: "company",
+    items: ["about", "team", "contact", "careers", "vision", "culture"],
   },
 ];

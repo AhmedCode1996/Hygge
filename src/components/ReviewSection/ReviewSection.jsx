@@ -1,23 +1,18 @@
 import { styled } from "styled-components";
-import HeadingSection from "../HeadingSection/HeadingSection";
+import useSliderIndex from "../../hooks/useSliderIndex";
+
 import { DATA, REVIEWS } from "../../data/data";
-import SingleReview from "../SingleReview";
-import AnimatedIcon from "../AnimatedIcon/AnimatedIcon";
 import { ICONS } from "../../assets";
-import { useState } from "react";
-import MaxWrapper from "../MaxWrapper";
+
+import {
+  HeadingSection,
+  SingleReview,
+  AnimatedIcon,
+  MaxWrapper,
+} from "./../../components";
 
 const ReviewSection = () => {
-  const length = REVIEWS.length;
-  const [slideIndex, setSlideIndex] = useState(0);
-
-  const handlePrev = () => {
-    setSlideIndex((prev) => (prev - 1 + length) % length);
-  };
-
-  const handleNext = () => {
-    setSlideIndex((prev) => (prev + 1) % length);
-  };
+  const { slideIndex, handleNext, handlePrev } = useSliderIndex();
 
   return (
     <MaxWrapper>

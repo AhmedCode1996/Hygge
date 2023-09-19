@@ -13,7 +13,6 @@ const Wrapper = styled.button`
   color: var(--white-color);
   width: fit-content;
   padding: 16px 40px;
-  margin-top: 2rem;
   font-weight: bold;
   font-size: ${TYPOGRAPHY.lg};
   text-transform: capitalize;

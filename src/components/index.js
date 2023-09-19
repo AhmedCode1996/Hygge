@@ -1,3 +1,4 @@
+import AnimatedIcon from "./AnimatedIcon";
 import Header from "./Header";
 import MaxWrapper from "./MaxWrapper";
 import HeroSection from "./HeroSection";
@@ -10,7 +11,14 @@ import Information from "./Information";
 import SingleInformation from "./SingleInformation";
 import ReviewSection from "./ReviewSection";
 import SingleReview from "./SingleReview";
+import HeadingSection from "./HeadingSection";
+import NewsLetterSection from "./NewsLetterSection";
+import NewsLetterForm from "./NewsLetterForm";
+import FooterSection from "./FooterSection";
+import SingleFooterElement from "./SingleFooterElement";
+
 export {
+  AnimatedIcon,
   Header,
   MaxWrapper,
   HeroSection,
@@ -23,4 +31,9 @@ export {
   SingleInformation,
   ReviewSection,
   SingleReview,
+  HeadingSection,
+  NewsLetterForm,
+  NewsLetterSection,
+  FooterSection,
+  SingleFooterElement,
 };
