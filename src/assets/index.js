@@ -10,6 +10,7 @@ import searchIcon from "./Search.png";
 import cartIcon from "./Icon-indicator.png";
 import userProfile from "./Profile.png";
 import HeroImage from "./HeroImage.svg";
+import arrow from "./arrow.json";
 
 import onSale from "./categories/Shopping-bag.png";
 import skinCare from "./categories/Skincare.png";
@@ -33,6 +34,10 @@ import returnIcon from "./information/Returns.png";
 import profileIcon from "./information/Profile.png";
 import qualityIcon from "./information/Quality.png";
 
+import avatar1 from "./avatar-1.svg";
+import avatar2 from "./avatar-2.svg";
+import avatar3 from "./avatar-3.svg";
+
 export const ICONS = {
   primary_1,
   primary_2,
@@ -46,6 +51,7 @@ export const ICONS = {
   cartIcon,
   searchIcon,
   HeroImage,
+  arrow,
   category1: onSale,
   category2: skinCare,
   category3: afterSun,
@@ -71,4 +77,7 @@ export const ICONS = {
   returnIcon,
   profileIcon,
   qualityIcon,
+  avatar1,
+  avatar2,
+  avatar3,
 };

@@ -17,6 +17,10 @@ export const DATA = [
     title: "why us",
     description: "why people choose us",
   },
+  {
+    title: "our reviews",
+    description: "what our customers are saying",
+  },
 ];
 
 export const INFORMATION = [
@@ -39,5 +43,29 @@ export const INFORMATION = [
     title: "high quality",
     description:
       "All of our products go through very strict inspection before we dispatch them",
+  },
+];
+
+export const REVIEWS = [
+  {
+    id: 0,
+    image: ICONS.avatar1,
+    name: "Frank Ramsey",
+    description:
+      "alike base kind baby green again door nails solid jungle catch sleep origin welcome pain watch correctly church camp if breathe station run think",
+  },
+  {
+    id: 1,
+    image: ICONS.avatar2,
+    name: "Rosa Garza",
+    description:
+      "bound region camera fierce large found command my house station light captain sum terrible can physical queen be kind correct bicycle swept particular so",
+  },
+  {
+    id: 2,
+    image: ICONS.avatar3,
+    name: "Delia Estrada",
+    description:
+      "courage father kept apartment must full halfway or forgot gift follow leaf settle card anyone faster citizen else separate bank something strong friendly down",
   },
 ];

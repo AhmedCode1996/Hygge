@@ -7,6 +7,7 @@ export const getProducts = async () => {
     if (res.ok) return data;
   } catch (error) {
     console.log("Error: ", error.message);
+    throw error;
   }
 };
 

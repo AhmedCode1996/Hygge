@@ -14,6 +14,7 @@ import {
   Information,
   Product,
   Products,
+  ReviewSection,
 } from "../components";
 import HeadingSection from "../components/HeadingSection/HeadingSection";
 import { ICONS } from "../assets";
@@ -78,7 +79,9 @@ const Home = () => {
             />
           )}
         />
-        <Button align="center">show more</Button>
+        <ButtonWrapper>
+          <Button align="center">show more</Button>
+        </ButtonWrapper>
       </ProductsSection>
       <InformationSection>
         <HeadingSection
@@ -88,6 +91,7 @@ const Home = () => {
         />
         <Information />
       </InformationSection>
+      <ReviewSection />
     </Wrapper>
   );
 };
@@ -120,4 +124,8 @@ const InformationSection = styled.div`
   & > * + * {
     margin-top: 40px;
   }
+`;
+const ButtonWrapper = styled.div`
+  width: fit-content;
+  margin-inline: auto;
 `;
