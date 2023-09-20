@@ -16,6 +16,8 @@ import NewsLetterSection from "./NewsLetterSection";
 import NewsLetterForm from "./NewsLetterForm";
 import FooterSection from "./FooterSection";
 import SingleFooterElement from "./SingleFooterElement";
+import SingleBlog from "./SingleBlog";
+import BlogsSection from "./BlogsSection";
 
 export {
   AnimatedIcon,
@@ -36,4 +38,6 @@ export {
   NewsLetterSection,
   FooterSection,
   SingleFooterElement,
+  SingleBlog,
+  BlogsSection,
 };

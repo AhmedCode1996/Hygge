@@ -17,6 +17,7 @@ import {
   ReviewSection,
   HeadingSection,
   NewsLetterSection,
+  BlogsSection,
   FooterSection,
 } from "../components";
 import { ICONS } from "../assets";
@@ -94,6 +95,7 @@ const Home = () => {
         <Information />
       </InformationSection>
       <ReviewSection />
+      <BlogsSection />
       <NewsLetterSection />
       <FooterSection />
     </Wrapper>

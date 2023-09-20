@@ -30,6 +30,14 @@ import product5 from "./products/Product-5.svg";
 import product6 from "./products/Product-6.svg";
 import product7 from "./products/Product-7.svg";
 
+import blog0 from "./blogs/image-0.svg";
+import blog1 from "./blogs/image-1.svg";
+import blog2 from "./blogs/image-2.svg";
+import blog3 from "./blogs/image-3.svg";
+import blog4 from "./blogs/image-4.svg";
+import blog5 from "./blogs/image-5.svg";
+import blog6 from "./blogs/image-6.svg";
+
 import returnIcon from "./information/Returns.png";
 import profileIcon from "./information/Profile.png";
 import qualityIcon from "./information/Quality.png";
@@ -80,4 +88,11 @@ export const ICONS = {
   avatar1,
   avatar2,
   avatar3,
+  blog0,
+  blog1,
+  blog2,
+  blog3,
+  blog4,
+  blog5,
+  blog6,
 };

@@ -74,6 +74,58 @@ export const REVIEWS = [
   },
 ];
 
+export const BLOGS = [
+  {
+    id: 1,
+    image: ICONS["blog6"],
+    title: "morning skincare routine: 10 top tips for you",
+    category: "top tips",
+    label: "recent",
+  },
+  {
+    id: 2,
+    image: ICONS["blog5"],
+    title: "new collection is out",
+    category: "new in",
+    label: "",
+  },
+  {
+    id: 3,
+    image: ICONS["blog4"],
+    title: "always stay fresh",
+    category: "how to",
+    label: "popular",
+  },
+  {
+    id: 4,
+    image: ICONS["blog3"],
+    title: "improve your skin now",
+    category: "masks",
+    label: "",
+  },
+  {
+    id: 5,
+    image: ICONS["blog2"],
+    title: "stay safe in the sun",
+    category: "sun care",
+    label: "",
+  },
+  {
+    id: 6,
+    image: ICONS["blog1"],
+    title: "explore our bestselling products",
+    category: "bestsellers",
+    label: "",
+  },
+  {
+    id: 7,
+    image: ICONS["blog0"],
+    title: "5 great tips to get that perfect skin",
+    category: "top tips",
+    label: "",
+  },
+];
+
 export const FOOTER = [
   {
     id: 1,
