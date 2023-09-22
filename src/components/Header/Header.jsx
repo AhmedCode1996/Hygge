@@ -3,9 +3,13 @@ import { styled } from "styled-components";
 
 import MaxWrapper from "../MaxWrapper";
 
+import { useContextProvider } from "../../hooks/useContextProvider";
+
 import { ICONS } from "./../../assets/index";
 
+
 const Header = () => {
+  const { flipCollapse } = useContextProvider();
   return (
     <Wrapper>
       <MaxWrapper>
@@ -14,7 +18,7 @@ const Header = () => {
             <Item>
               <Logo src={ICONS.primary_1} />
             </Item>
-            <Item>
+            <Item onClick={flipCollapse}>
               <Menu>
                 <span></span>
                 <span></span>
@@ -44,6 +48,9 @@ const NavItems = styled.ul`
   justify-content: space-between;
 `;
 const Item = styled.li`
+  &:nth-of-type(2) {
+    position: relative;
+  }
   &:last-child {
     display: flex;
     align-items: center;

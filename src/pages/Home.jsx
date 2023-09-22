@@ -21,6 +21,8 @@ import {
   FooterSection,
 } from "../components";
 import { ICONS } from "../assets";
+import CollapseHeaderList from "./../components/CollapseHeaderList/CollapseHeaderList";
+import { useContextProvider } from "../hooks/useContextProvider";
 
 // const a = {
 //   i: 1,
@@ -45,11 +47,13 @@ const Home = () => {
   });
 
   const { isLoading, error, isError, status, data } = combinedQuery;
+  const { isCollapse } = useContextProvider();
 
   return (
     <Wrapper>
       <HeaderAndHero>
         <Header />
+        {isCollapse && <CollapseHeaderList />}
         <HeroSection />
       </HeaderAndHero>
       <CategoriesSection>
